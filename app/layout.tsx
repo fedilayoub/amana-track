@@ -43,7 +43,7 @@ export default function RootLayout({
             <p className="text-sm text-neutral-400">
               Made with ❤️ by{" "}
               <a
-                href="https://twitter.com/fedilayoub"
+                href="https://fedilayoub.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >

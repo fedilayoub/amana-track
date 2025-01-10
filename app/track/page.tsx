@@ -33,8 +33,8 @@ export default function Home() {
   return (
     <>
       <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center w-full max-w-[100%] min-h-[80vh] font-[family-name:var(--font-geist-sans)]">
-        <main className="flex w-full max-w-[100%] gap-8 row-start-2 justify-center">
-          <Tabs defaultValue="tracking_number" className="w-[50%] min-h-64">
+        <main className="flex md:w-full max-w-[100%] gap-8 row-start-2 justify-center">
+          <Tabs defaultValue="tracking_number" className="md:w-[50%] min-h-64">
             <TabsList className="grid w-full grid-cols-3">
               <TabsTrigger value="tracking_number">Tracking Number</TabsTrigger>
               <TabsTrigger value="image">Image Upload</TabsTrigger>
