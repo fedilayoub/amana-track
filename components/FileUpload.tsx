@@ -49,8 +49,9 @@ export function ImageUpload() {
                   alt="Uploaded file"
                   width={400}
                   height={300}
-                  className="rounded-xl"
+                  className="rounded-xl mb-2"
                 />
+              <p className="text-xs text-center text-neutral-700 dark:text-white">{files[0].name}</p>
               </div>
             </>
           )}
