@@ -4,6 +4,8 @@ import { useBarcodeReader } from "@/hooks/useBarcodeReader";
 import { DeliveryTrackingResult } from "./DeliveryTrackingResult";
 import Loading from "./ui/loading";
 import { useDeliveryTracker } from "@/hooks/useDeliveryTracker";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { AlertCircle, Camera, RefreshCcw, Scan } from "lucide-react";
 
 const SimpleBarcodeScanner = () => {
   const [isVideoActive, setIsVideoActive] = useState(false);
@@ -115,6 +117,16 @@ const SimpleBarcodeScanner = () => {
     <>
       {!data && !loading && !deliveryError && (
         <div className="flex flex-col w-full h-full p-16 gap-3 min-h-40 justify-center items-center border border-dashed bg-neutral-50 dark:bg-neutral-700/10 border-neutral-200 dark:border-neutral-800 rounded-lg backdrop-blur-md">
+          <Alert>
+            <AlertCircle className="h-4 w-4" />
+            <AlertDescription>
+              <p className="text-left text-neutral-600 dark:text-neutral-100">
+                Click &quot;Start Scanning&quot; to activate your camera, then hold your
+                barcode in front of the camera and click &quot;Capture Barcode&quot;.
+              </p>
+            </AlertDescription>
+          </Alert>
+
           {/* Video feed */}
           {(isVideoActive || isVideoLoading) &&
             !capturedImage &&
@@ -145,7 +157,6 @@ const SimpleBarcodeScanner = () => {
               />
             </div>
           )}
-        
 
           {/* Error message */}
           {error && (
@@ -160,19 +171,25 @@ const SimpleBarcodeScanner = () => {
               !isVideoLoading &&
               !capturedImage &&
               !foundBarcode && (
-                <Button variant={"outline"} onClick={startVideo}>Start Scanning</Button>
+                <Button variant={"outline"} onClick={startVideo}>
+                  <Camera className="h-4 w-4 mr-1" />
+                  Start Scanning
+                </Button>
               )}
 
             {isVideoActive &&
               !isVideoLoading &&
               !capturedImage &&
               !foundBarcode && (
-                <Button variant={"outline"} onClick={captureImage}>Track Delivery</Button>
+                <Button variant={"outline"} onClick={captureImage}>
+                  <Scan className="h-4 w-4 mr-1" />
+                  Capture Barcode
+                </Button>
               )}
 
             {(capturedImage || foundBarcode || error) && (
               <Button
-              variant={"outline"}
+                variant={"outline"}
                 onClick={() => {
                   setIsVideoActive(false);
                   setCapturedImage(null);
@@ -181,6 +198,7 @@ const SimpleBarcodeScanner = () => {
                   startVideo();
                 }}
               >
+                <RefreshCcw className="h-4 w-4 mr-1" />
                 Try Again
               </Button>
             )}
