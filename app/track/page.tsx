@@ -44,7 +44,7 @@ export default function Home() {
               <div className="flex flex-col justify-center items-center min-h-96 border border-dashed bg-neutral-50 dark:bg-neutral-700/10 border-neutral-200 dark:border-neutral-800 rounded-lg backdrop-blur-md">
                 {!loading && !data && !error && (
                   <div className="flex justify-center items-center p-0 h-full">
-                    <div className="h-full flex flex-col items-center w-[30rem]">
+                    <div className="h-full flex flex-col items-center lg:w-[30rem]">
                       <h2 className="mb-5 text-xl text-center sm:text-2xl dark:text-white text-black">
                         Use Your Tracking Number
                       </h2>

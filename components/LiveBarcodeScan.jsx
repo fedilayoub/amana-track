@@ -116,7 +116,7 @@ const SimpleBarcodeScanner = () => {
   return (
     <>
       {!data && !loading && !deliveryError && (
-        <div className="flex flex-col w-full h-full p-16 gap-3 min-h-40 justify-center items-center border border-dashed bg-neutral-50 dark:bg-neutral-700/10 border-neutral-200 dark:border-neutral-800 rounded-lg backdrop-blur-md">
+        <div className="flex flex-col w-full h-full p-4 md:p-16 gap-3 min-h-40 justify-center items-center border border-dashed bg-neutral-50 dark:bg-neutral-700/10 border-neutral-200 dark:border-neutral-800 rounded-lg backdrop-blur-md">
           <Alert>
             <AlertCircle className="h-4 w-4" />
             <AlertDescription>
