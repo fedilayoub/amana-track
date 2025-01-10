@@ -3,6 +3,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -39,18 +40,7 @@ export default function RootLayout({
         >
           <Header />
           {children}
-          <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-            <p className="text-sm text-neutral-400">
-              Made with ❤️ by{" "}
-              <a
-                href="https://fedilayoub.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                @fedilayoub
-              </a>
-            </p>
-          </footer>
+         <Footer />
         </ThemeProvider>
       </body>
     </html>
