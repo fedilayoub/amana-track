@@ -7,6 +7,7 @@ import { Button } from "./ui/button";
 import { useDeliveryTracker } from "@/hooks/useDeliveryTracker";
 import { DeliveryTrackingResult } from "./DeliveryTrackingResult";
 import Loading from "./ui/loading";
+import { Package } from "lucide-react";
 
 export function ImageUpload() {
   const [files, setFiles] = useState<File[]>([]);
@@ -51,7 +52,9 @@ export function ImageUpload() {
                   height={300}
                   className="rounded-xl mb-2"
                 />
-              <p className="text-xs text-center text-neutral-700 dark:text-white">{files[0].name}</p>
+                <p className="text-xs text-center text-neutral-700 dark:text-white">
+                  {files[0].name}
+                </p>
               </div>
             </>
           )}
@@ -59,7 +62,8 @@ export function ImageUpload() {
       )}
       {imageSrc && !data && !loading && !error && (
         <div className="flex w-full justify-center">
-          <Button onClick={trackDelivery} className="mb-5">
+          <Button variant={"outline"} onClick={trackDelivery} className="mb-5">
+            <Package className="mr-2" />
             Track Delivery
           </Button>
         </div>
