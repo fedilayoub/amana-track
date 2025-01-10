@@ -39,11 +39,11 @@ export function ImageUpload() {
   return (
     <div className="w-full max-w-4xl mx-auto min-h-96 border border-dashed bg-neutral-50 dark:bg-neutral-700/10 border-neutral-200 dark:border-neutral-800 rounded-lg backdrop-blur-md">
       {!data && !loading && !error && (
-        <div className="flex flex-col md:flex-row h-full items-center justify-center">
+        <div className="flex flex-col xl:flex-row h-full items-center justify-center">
           <FileUpload onChange={handleFileUpload} />
           {imageSrc && (
             <>
-              <div className="w-full flex flex-col justify-center rounded-xl">
+              <div className="w-full flex flex-col justify-center items-center rounded-xl mb-3 lg:mb-0">
                 <Image
                   id="scanner_container"
                   src={imageSrc}

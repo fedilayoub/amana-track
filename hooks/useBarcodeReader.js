@@ -33,7 +33,6 @@ export const useBarcodeReader = () => {
         },
         (result) => {
           if (result?.codeResult) {
-            console.log(result.codeResult.code);
             setBarcode(result.codeResult.code);
             return result.codeResult.code;
           } else {
