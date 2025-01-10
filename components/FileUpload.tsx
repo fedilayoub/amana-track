@@ -45,7 +45,7 @@ export function ImageUpload() {
             <>
               <div className="w-full flex flex-col justify-center rounded-xl">
                 <Image
-                  id="interactive-overlay"
+                  id="scanner_container"
                   src={imageSrc}
                   alt="Uploaded file"
                   width={400}

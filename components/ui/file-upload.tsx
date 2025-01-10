@@ -64,7 +64,7 @@ export const FileUpload = ({
           ref={fileInputRef}
           id="file-upload-handle"
           type="file"
-          accept="image/*"
+          accept="image/png"
           onChange={(e) => handleFileChange(Array.from(e.target.files || []))}
           className="hidden"
         />
@@ -75,6 +75,7 @@ export const FileUpload = ({
           <p className="relative z-20 font-normal text-neutral-400 dark:text-neutral-400 text-base mt-2">
             Upload a barcode image of your delivery to get started
           </p>
+          <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-1">.png files only</p>
           <svg
           className="w-24 dark:fill-neutral-300 fill-neutral-500"
             viewBox="-4 0 32 32"
