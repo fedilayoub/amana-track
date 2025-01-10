@@ -3,7 +3,7 @@ const Footer = () => {
   const words = ["Next.js", "Tailwind CSS", "Shadcn UI", "❤️"];
   return (
     <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-      <p className="text-sm text-neutral-400">
+      <div className="text-sm text-neutral-400">
         Made with <FlipWords words={words} /> by{" "}
         <a
           href="https://fedilayoub.com"
@@ -12,7 +12,7 @@ const Footer = () => {
         >
           @fedilayoub
         </a>
-      </p>
+      </div>
     </footer>
   );
 };
