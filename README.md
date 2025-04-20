@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Amanti
 
-## Getting Started
+**Amanti** is a dedicated delivery tracking website designed to help users stay informed about their **Amana** deliveries in **Morocco**. The platform allows you to track your shipments anytime using a tracking number or by scanning a barcode image.
 
-First, run the development server:
+![image](https://github.com/user-attachments/assets/fc003946-1a7a-49ea-8fca-3dd7b3fd5862)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![image](https://github.com/user-attachments/assets/0559cb80-3270-409a-aee7-cce62f81a4d3)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚚 Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Delivery Tracking**: Enter your tracking number or upload an image containing a barcode to get instant updates on your delivery status.
+- **Live Scan**: Use your device’s camera to scan barcodes in real-time for quick tracking.
+- **User-Friendly Interface**: Simple and intuitive design focused on providing fast and accurate delivery information.
 
-## Learn More
+- ![image](https://github.com/user-attachments/assets/19f9664f-72f9-40f7-8477-a561c841703f)
 
-To learn more about Next.js, take a look at the following resources:
+![image](https://github.com/user-attachments/assets/bd8876a6-bd7f-4f1b-945b-e00002abaafc)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📖 How to Use
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Enter Tracking Number**  
+   Input your Amana delivery tracking number into the provided field.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. **Upload Barcode Image**  
+   Alternatively, upload a photo of the barcode from your delivery receipt.
+
+3. **Live Scan**  
+   Use the live scan feature to scan barcodes directly for immediate tracking results.
+
+4. **Get Updates**  
+   Receive real-time updates about your delivery's location and status.
+
+---
+
+## 🎯 Purpose
+
+**Amanti.live** serves as a convenient tool for customers of **Amana deliveries in Morocco** to monitor their shipments efficiently reducing uncertainty and improving the overall delivery experience.
